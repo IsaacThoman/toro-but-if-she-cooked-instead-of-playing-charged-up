@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import edu.wpi.first.math.util.Units;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -15,5 +17,17 @@ package frc.robot;
 public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
+  }
+
+  public static final class ArmConstants{
+    public static final double[] stageOnePivotCoordinate = {Units.inchesToMeters(-4.864), Units.inchesToMeters(18.66)};
+
+    public static final double magEncoderCountsPerRotation = 4096;//4096
+
+    public static final double stageOneLength = Units.inchesToMeters(28.75);
+
+    public static final double stageTwoLength = Units.inchesToMeters(28.75);
+
+
   }
 }
